@@ -65,6 +65,7 @@ public class TweetV1 implements Tweet {
   @JsonProperty("is_quote_status")
   private              boolean    isQuoteStatus;
   private              EntitiesV1 entities;
+  private              int        impressionCount;
 
   @Override
   public LocalDateTime getCreatedAt() {
