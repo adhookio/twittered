@@ -46,6 +46,13 @@ public interface Tweet {
   int getRetweetCount();
 
   /**
+   * Get the number of impressions of the tweet
+   *
+   * @return the number of the tweet impressions
+   */
+  int getImpressionCount();
+
+  /**
    * Get the number of likes of the tweet
    *
    * @return the number of the tweet likes
