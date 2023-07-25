@@ -308,6 +308,12 @@ public class TweetV2 implements Tweet {
 
     @Override
     @JsonIgnore
+    public int getImpressionCount() {
+      return publicMetrics.getImpressionCount();
+    }
+
+    @Override
+    @JsonIgnore
     public int getQuoteCount() {
       return publicMetrics.getQuoteCount();
     }
