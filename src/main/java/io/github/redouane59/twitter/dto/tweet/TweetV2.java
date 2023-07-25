@@ -190,6 +190,14 @@ public class TweetV2 implements Tweet {
     return data.getPublicMetrics().getQuoteCount();
   }
 
+   @Override
+  public int getImpressionCount() {
+    if (data == null) {
+      return 0;
+    }
+    return data.getPublicMetrics().getImpressionCount();
+  }
+
   @Override
   public String getInReplyToUserId() {
     if (data == null) {
@@ -402,6 +410,8 @@ public class TweetV2 implements Tweet {
     private int likeCount;
     @JsonProperty("quote_count")
     private int quoteCount;
+    @JsonProperty("impression_count")
+    private int impressionCount;
   }
 
   @Getter
